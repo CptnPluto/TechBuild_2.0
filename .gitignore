@@ -1,0 +1,386 @@
+# TechBuild 2.0 - Comprehensive .gitignore
+# Generated for Full Stack Application (Next.js Frontend + Express Backend + Python AI Service)
+
+####################
+# Environment Files
+####################
+*.env
+*.env.local
+*.env.development
+*.env.test
+*.env.production
+.env
+.env.local
+.env.development
+.env.test  
+.env.production
+.env.example
+
+####################
+# Logs & Debug Files
+####################
+*.log
+logs/
+*.pid
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# AI Service specific logs
+startup_test.log
+hs_err_pid*.log
+
+####################
+# Dependencies
+####################
+
+# Node.js
+node_modules/
+jspm_packages/
+
+# Python
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python package distribution files
+*.pyi
+*.typed
+WHEEL
+METADATA
+RECORD
+INSTALLER
+REQUESTED
+top_level.txt
+
+####################
+# IDEs & Editors
+####################
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# IntelliJ
+.idea/
+*.sln
+*.sw?
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+####################
+# OS Generated Files
+####################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+####################
+# Frontend (Next.js/React)
+####################
+.next/
+out/
+build/
+
+# Testing
+coverage/
+.nyc_output
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+####################
+# Backend (Node.js/Express)
+####################
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# Lock files (optional, include if you want to ignore them)
+# package-lock.json
+# yarn.lock
+
+####################
+# AI Service (Python/FastAPI)
+####################
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+####################
+# Database
+####################
+*.sqlite
+*.sqlite3
+*.db
+
+# PostgreSQL
+*.sql
+
+####################
+# Cloud & Deployment
+####################
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# AWS
+.aws/
+
+# Docker
+.dockerignore
+Dockerfile.prod
+
+####################
+# Package Managers
+####################
+# npm
+.npm
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+####################
+# Security & Secrets
+####################
+# API keys and tokens
+*.pem
+*.key
+*.crt
+secrets.json
+*.secrets
+
+####################
+# Generated/Compiled Files
+####################
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+####################
+# Testing
+####################
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+####################
+# Documentation Build
+####################
+docs/_build/
+.sphinx/
+
+####################
+# Project Specific
+####################
+
+# Landing.AI output files (temporary for testing)
+landing_ai_output.json
+landing_ai_hardware_output.json
+
+# Processing temporary files
+temp_documents/
+temp_uploads/
+processing_cache/
+
+# Model files and caches (if any)
+models/
+model_cache/
+*.model
+*.pkl
+*.joblib
+
+# Configuration backups
+*.bak
+*.backup
+main_original.py
+
+# License and package files
+LICENSE*
+COPYING*
+NOTICE*
+AUTHORS*
+CONTRIBUTORS*
+CHANGELOG*
+HISTORY*
+
+# Generated documentation
+*.md
+!README.md
+!CHANGELOG.md
+!CONTRIBUTING.md
+!LICENSE.md
+!CLAUDE.md
+!DEVELOPMENT_PLAN.md
+!PHASE_2_ARCHITECTURE.md
+!DEEP_LEARNING_TROUBLESHOOTING.md
+!landing_ai_implementation.md
+
+# qodo files (AI assistant generated)
+*.qodo
+
+####################
+# Miscellaneous
+####################
+.cache/
+*.cache
+.temp/
+.tmp/
