@@ -56,7 +56,7 @@ app.add_middleware(
 # Import and include routes
 try:
     from api.routes.processing import router as processing_router
-    app.include_router(processing_router, prefix="/api/ai")
+    app.include_router(processing_router)
     logger.info("✅ Processing routes loaded")
 except ImportError as e:
     logger.error(f"❌ Failed to load processing routes: {e}")
