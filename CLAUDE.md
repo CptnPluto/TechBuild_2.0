@@ -74,11 +74,40 @@ Current Status: **Phase 2 Active** - Backend integration complete, AI extraction
 # Quick start (preserves dependencies and database)
 ./start-dev-quick.sh
 
-# Individual service control
-./scripts/start-infrastructure.sh  # Start Docker services
-./scripts/start-backend.sh         # Start backend only
-./scripts/start-frontend.sh        # Start frontend only
-./scripts/start-ai-service.sh      # Start AI service only (Landing.AI)
+# Full start with fresh setup
+./start-dev.sh
+
+# Stop all services
+./stop-dev.sh
+
+# Check service health
+./check-services.sh
+
+# Initial environment setup (run once)
+./scripts/setup-environment.sh
+```
+
+### Individual Service Control
+
+```bash
+# Infrastructure (Docker services)
+./scripts/start-infrastructure.sh  # PostgreSQL, Redis, MinIO
+./scripts/stop-infrastructure.sh   # Stop Docker services
+
+# Backend (Express.js)
+./scripts/start-backend.sh         # Start backend on port 5001
+./scripts/stop-backend.sh          # Stop backend service
+
+# Frontend (Next.js) 
+./scripts/start-frontend.sh        # Start frontend on port 3000
+./scripts/stop-frontend.sh         # Stop frontend service
+
+# AI Service (FastAPI + Landing.AI)
+./scripts/start-ai-service.sh      # Start AI service on port 8000
+./scripts/stop-ai-service.sh       # Stop AI service
+
+# Health monitoring
+./scripts/check-services.sh        # Comprehensive health check
 ```
 
 ### AI Service Development (Landing.AI Only)
