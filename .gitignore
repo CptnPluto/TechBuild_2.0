@@ -56,7 +56,8 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+# TEMPORARILY ALLOW dist/ FOR FILE RECOVERY
+# dist/
 downloads/
 eggs/
 .eggs/
@@ -363,17 +364,17 @@ CONTRIBUTORS*
 CHANGELOG*
 HISTORY*
 
-# Generated documentation
-*.md
-!README.md
-!CHANGELOG.md
-!CONTRIBUTING.md
-!LICENSE.md
-!CLAUDE.md
-!DEVELOPMENT_PLAN.md
-!PHASE_2_ARCHITECTURE.md
-!DEEP_LEARNING_TROUBLESHOOTING.md
-!landing_ai_implementation.md
+# Generated documentation - TEMPORARILY DISABLED TO ALLOW FILE RECOVERY
+# *.md
+# !README.md
+# !CHANGELOG.md
+# !CONTRIBUTING.md
+# !LICENSE.md
+# !CLAUDE.md
+# !DEVELOPMENT_PLAN.md
+# !PHASE_2_ARCHITECTURE.md
+# !DEEP_LEARNING_TROUBLESHOOTING.md
+# !landing_ai_implementation.md
 
 # qodo files (AI assistant generated)
 *.qodo

@@ -1,0 +1,24 @@
+# TechBuild 2.0 AI Service Dependencies
+# Streamlined for Landing.AI ONLY processing
+
+# Core FastAPI dependencies
+fastapi==0.115.6
+uvicorn==0.34.0
+python-multipart==0.0.20
+pydantic==2.10.8
+python-dotenv==1.0.2
+
+# Landing.AI integration - THE SOLE PROCESSING METHOD
+agentic-doc==0.3.1
+
+# HTTP and async support
+httpx==0.28.1
+aiofiles==24.1.0
+requests>=2.32.4
+
+# Logging and monitoring
+structlog==24.5.0
+
+# Development and testing
+pytest==8.3.4
+pytest-asyncio==0.25.0
