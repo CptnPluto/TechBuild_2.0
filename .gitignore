@@ -49,6 +49,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+/*.pyc
 *.pyo
 *.pyd
 *.so
